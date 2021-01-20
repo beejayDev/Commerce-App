@@ -1,0 +1,11 @@
+<div class="container__form container--signin">
+	<form method="POST" action="#" class="form" id="form2">
+		{% csrf_token %}
+		{% for message in messages %}                                                           <p>{{message}}</p>
+		{% endfor %}
+		<h2 class="form__title">Sign In</h2>
+		<input type="text" name="username" placeholder="username" class="input" />
+		<input type="password" name="password" placeholder="Password" class="input" />
+		<input type="submit" class="btn"/>
+		</form>
+</div>
